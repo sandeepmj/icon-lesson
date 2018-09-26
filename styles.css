@@ -1,0 +1,67 @@
+
+main {
+  max-width: 65%;
+  margin: 0 auto; /*centers the whole thing*/
+  padding: 20px; 
+  max-width: 600px;
+  font-family:Georgia;
+}
+
+/*main h1 refers to the h1 that is in the main section*/
+main h1 {
+  text-transform: uppercase;
+}
+/*this sets the p tag properties across the whole site. if you want to override it, you'll have to target specific sections with new properties (see .graphic p below*/
+main p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.byline {
+  text-transform: uppercase;
+  color: gray;
+}
+
+/* different than the main h1 because article h1 refers to h1(s) in the article section*/
+article h1 {
+  font-size: 1.5em;
+  text-transform: none; /*we need this here because styles cascade down and we want something different*/
+  text-align: center;
+}
+
+.intro {
+  width: 100%; /*Important to note that this section will be 100% wide of the container it is in*/
+}
+
+.graphic, .holder {
+  margin: 10px;
+  padding: 10px;
+  float: left;
+  max-width: 100%;
+  float: left;
+  font-family: Helvetica; /*notice how this overrides the font set in the main section.*/
+  background: gray;
+}
+
+/*if you uncomment the section below, you will see it turn the p text green only in the graphic section*/
+
+/*.graphic p {
+  color: green;
+}*/
+
+
+
+.icon {
+  max-width: 25%;
+  /*keeps the image small*/
+  float: left;
+}
+
+img {
+  max-width: 100%;
+  /*pushes image down to align with top of text*/
+  margin-top: 20px;
+}
+
+
+/*prevents icons from overlapping text*/
